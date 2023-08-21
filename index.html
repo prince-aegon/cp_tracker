@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Timer and Color Boxes</title>
+</head>
+<body>
+    <div style="color:white; margin-bottom: 20px; font-size:24px; font-weight:bold;">CP Tracker</div>
+    <div class="timer-container">
+        <!-- <label for="timer" style="color:white">Set Timer:</label> -->
+        <input type="text" id="timer" placeholder="Set Timer" value="02:00:00">
+        <button id="startTimer">Start</button>
+        <button id="pauseTimer">Pause / Resume</button>
+      </div>
+      <div id="remainingTime"style="color:white; font-weight:bold; font-size:18px; font-family:monospace;">Remaining Time: 00:00:00</div>
+      
+  <div class="box-container">
+        <div class="box" id="boxA">A</div>
+        <div class="box" id="boxB">B</div>
+        <div class="box" id="boxC">C</div>
+        <div class="box" id="boxD">D</div>
+        <div class="box" id="boxE">E</div>
+        <div class="box" id="boxF">F</div>
+  </div>
+  <table class="time-table">
+    <thead>
+      <tr>
+        <th>Box</th>
+        <th>Time Turned Green</th>
+      </tr>
+    </thead>
+    <tbody id="timeTableBody"></tbody>
+  </table>
+  <script src="app.js"></script>
+</body>
+</html>

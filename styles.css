@@ -1,0 +1,117 @@
+body {
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.795);
+  }
+  
+  .timer-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: monospace;
+  }
+  
+  .timer-label {
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: monospace;
+  }
+  
+  #timer {
+    font-family: monospace;
+    font-size: 16px;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  #timer:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  #startTimer,
+  #pauseTimer {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent; /* Set initial background to transparent */
+    color: white; /* Set initial text color */
+    border-radius: 8px;
+    border: 2px solid white; /* Add border for outline */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition both background and color */
+  }
+  
+  #startTimer:hover,
+  #pauseTimer:hover {
+    background-color: white; /* Fill the background on hover */
+    color: black; /* Change text color on hover */
+    /* font-size: 24px; */
+  /* font-weight: bold; */
+  /* text-transform: uppercase; */
+  }
+  
+  #pauseTimer {
+    margin-left: 10px;
+  }
+  
+  #pauseTimer.is-paused {
+    border-color: #e74c3c; /* Change border color when paused */
+  }
+  
+  #pauseTimer.is-paused:hover {
+    background-color: #e74c3c; /* Fill the background on hover when paused */
+    color: white; /* Change text color on hover when paused */
+  }
+  
+  .box-container {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: grey;
+    cursor: pointer;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
+  
+
+  .time-table {
+    width: 50%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .time-table th,
+  .time-table td {
+    /* color:black; */
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .time-table th {
+    color:black;
+    background-color: #f0f0f0;
+  }
+
+  .time-table tr {
+    color: white;/* Set background color to white */
+  }
